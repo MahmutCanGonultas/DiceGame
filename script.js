@@ -86,20 +86,18 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNewGame.addEventListener('click', function () {
-  if (!playing) {
-    scores = [0, 0];
-    currentScore = 0;
-    activePlayer = 0;
-    playing = true;
+  scores = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
 
-    score0El.textContent = 0;
-    score1El.textContent = 0;
-    current0El.textContent = 0;
-    current1El.textContent = 0;
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  current0El.textContent = 0;
+  current1El.textContent = 0;
 
-    player0El.classList.remove('player--winner');
-    player1El.classList.remove('player--winner');
-    player0El.classList.add('active');
-    player1El.classList.remove('active');
-  }
+  player0El.classList.remove('player--winner');
+  player1El.classList.remove('player--winner');
+  player0El.classList.add('active');
+  player1El.classList.remove('active');
 });
